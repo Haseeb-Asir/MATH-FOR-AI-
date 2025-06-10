@@ -1,0 +1,54 @@
+
+-----STATS ,, BRACNCH TO COLLECT ANALYZE AND PRESENT INFO OR DATA ------------
+
+
+TYPES are 2
+1. descriptive 
+just analyze and do all feature engineering withour predition 
+
+
+2. interferential
+
+make prediction upon population or sample data 
+
+
+
+population is all poepple . e.g all poeple i  pka.. 
+while sample is part of  popullation and is random an not biased 
+
+
+1....measure of central tendency ....calculate central value of dataset
+
+mean(sum of all /no of item) prone to outlier and not good
+mode(most frequent value) good when outliers 
+and median (middle value)
+
+weighted mean . means using weights of numbers e.g 1+2+3/3 = mean  while  1*12+2*45+3*5/12+45+85 is weighted 
+trimmed mean ,, removing smalles and largest value form dataset good woth dealing outliers
+
+2...Measure oof dispersion  see how far data iis spread 
+range max value - min ......but not good when outliers 
+variance = (values - mean )^2/N measures how far is each point from mean tell us the spread but not good when outlier or prone to outlier 
+
+standard deviation:  is square root of variance, most used because :
+its unit is same as data  and tell us easily  
+
+CVA coefficient of variance :  standard deviation / mean *100 
+
+graphs for analysis.... 
+
+1 categorical data .
+1.frequency distribution table.tells number of times each vakue occurs in dataset we can do bar plot for thist oo 
+2. relative frequency ... calculated percentage for above frequenct freuency can do pie chart for this 
+3. commulatiive frequency adds frequency distribution for each entry one by one as we go down 
+
+2 Numerical columns .
+1.frequency distribution table create own categories called bins e.g for age we create bins 10-20 , 20-30.etc.and plot cretaed is called histogram 
+ histogram plots are symmetric, bimodal,left skew,right skew no pattern and uniform 
+
+graphs for bivariate analysis:
+3 scenerios...
+1.both colum are categorical:
+contingency table crosstab table gives count respectively accordingly in table and rows row with table like survived  with pclass 
+2 both are numerical then we use scatter plot 
+3 categorical and numerical : can compare distribution ....by bar or any cross tab ,by dividing into bins   CRETE IT IN FOMRATO RO PASTE INTO 
