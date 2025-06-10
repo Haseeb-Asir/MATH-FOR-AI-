@@ -32,6 +32,7 @@ variance = (values - mean )^2/N measures how far is each point from mean tell us
 
 standard deviation:  is square root of variance, most used because :
 its unit is same as data  and tell us easily  
+SO ITS MORE USEFUL
 
 CVA coefficient of variance :  standard deviation / mean *100 
 
