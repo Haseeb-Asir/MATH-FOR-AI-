@@ -1,0 +1,70 @@
+QUANTILES AND PERCENTILES:
+
+quantiles top level word...are statistical measures to divide set of numerical data intoequal sized group or buckets 
+used to understand distribuytion of data and used to find outliers 
+types :
+quartiles divide data to 4 parts  
+decile to divide data to 10 parts 
+percentiles are divide data to 100 equal parts 
+quintiles divide to 5 parts
+
+data should be sorted ,
+they are not actual values in data
+can derive all tiles byy percentiles 
+
+PERCENTILE : represent percentage of observations in data set that fall below value 
+e.g 99 percentile means  99 people behind and 1 are ahead
+formula pl(percentile location in dataset ) =  P/100 (N+1)  p = percentile rank N = no of observation in data 
+formula percentile rank = x + 0.5y /n    x = value below given value,y = no of value equal to given value n = no of obs
+
+5 NUMBER SUMMARY :
+is descriptive stat provides summary of dataset.consist of 5 values taht divide dataset in 4 parts 
+1 minnimun value
+2. first quartile Q1 25 lowest
+3. Median Q2 50 %
+4. third quartile  Q3 75 %
+5. max vlaue 
+
+represented using box plot  very useful 
+
+IQR INTERQUARTILE RANGE:
+
+based on above 5 system from Q1 to Q3 .... 
+
+BOX PLOT 
+also called box and whissker plot shows distribution of data 
+
+min = Q1 -1.5(IQR)	.....IQR = Q3 - Q1.....
+max = Q3 + 1.5(IQR)
+
+SCATTER PLOT 
+done when both colum are numerical 
+
+COVARIANCE:
+ is stat measure which describes how much two variables are linearky related. tel
+if one var increases wiht other or reverse or 
++ve when x is increasing and also y
+-ve when x i increasing but y is declining 
+if x is increasing but no hange in y so its covariance is 0 or near to 0
+
+disadvantage : it does not tell strenght of relationship between 2 variable ....
+because scale changes and it affects the result 
+
+covariance of variable with itself will give us simple variance 
+
+CORRELATION: 
+it solves the problem of covariance and tells how two variables are related with strength and upto which degree
+e.g strong positive correlation ,weak positive corr ,strong negative corr,weak negative corr,moderate neg corr,no corr
+by scatter plot
+measured by correlation coefficient ranging from -1 to 1 .
+......corr doesnot imply causation.... 
+means if if corr that doesnot mean it is also causation
+one variable is not  reason for others behavior
+means more fire is more firefighter but not good that more fire is due to more fighters
+for multivariate analysis : 
+3d scatter plot 
+using hue parametre
+facetgrids
+jointplots
+pair plos
+bubble chart
