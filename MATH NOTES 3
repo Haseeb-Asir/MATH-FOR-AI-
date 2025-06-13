@@ -1,0 +1,137 @@
+ALgerbra VARIABLEs 
+are unknown values e.g of x +6 =1,..
+denoted by small letter  x y z 
+
+
+RANDOM VARIABLES
+is set of possible values form a random experiment 
+e.g coin toss or dice roll answers is random 
+denoted by capital letters XYZ
+
+
+
+types :
+1. Discrete random var
+
+e.g coin toss or dice roller values are discrete 2,3,4,5, not .5 .66 or etc
+
+
+2. Continous random var
+
+e.g CGPA of students van be 2 but also 5.6 etc
+range based 
+
+
+
+PROBABILITY DISTRIBUTIONS:
+is list of all possible outcomes of a random variable along with their corresponding probabliliy values 
+
+is kind of table one row is possibilities and second is probability
+e.g coin toss has 2 possibility  head 1 or tail 0
+	and has prob for each as 50% 
+this is probab distrubution
+
+problem is that for mor no of outcomes we will get tediious table and difficult to undestand
+
+solution is : we use a mathematical function to model relationship b\w outcome and probab
+
+
+y = f(x) gives y probability value for each x outcome 
+also called
+probability distribution function: PDF..(mathematical relation between both )
+
+graph types for pdf
+
+random discrete var  dotted on graph
+continous random var straight line without any breaksor gaps in ine for graph 
+
+
+famous one are 
+normal distribution 
+uniform
+beta 
+bernouli 
+poisson chi-square
+pareto  
+weibul
+
+why is probab dist important ?
+1 gives idea about shape of data and its spread 
+2 idea of famous distribution above ,we automattically know about it a lot
+
+
+a note or parametres ....
+are numerical values that determine shape location and scale of distribution in probab distribution
+
+
+probab distribution have parametres that  are different for every probab distribution
+
+
+PDF (probability distribution function):
+math func that describes the probab of obtaining different values of random var 
+in a particular probability distribution
+
+TYPES 
+1. probability mass func (PMF)
+
+if we are plotting probability dist func for a discrete random var will use PMF
+
+2. probability  density func(PDF too but can use as we like )
+
+if we are plotting probability dist func for a continous random var will use PDF
+
+3. CDF cummulative distribution func:
+formed using combining pmf and pdf 
+
+
+1. PMF probability mass func:
+gives probab dist of discrete random var 
+when assigining probab to to each random var it must meet 2 conditions 
+1. assigned probab shoulld be non negative 
+2. sum of all probab ==1 
+
+ex for dice roller 
+y =f(x) so equation is Y = {1/6 if x belong to 1,2,3,4,5,6
+			     0 otherwise}
+
+
+2. CDF cummulative distribution func:
+describes the probab that a random var X with a given probab distrib will be found at a 
+values less than or greater than equal to x
+in cdf we say that for x =5 or etc tilll that point and lesse than that the probab..
+from pmf...
+e.g in pmf we found   what was f(x=1,2,3,4,5,6) in dice 
+but in cdf we do f(x<4) = f(x=4)+f(x=3)+f(x=2)+f(x=1) == 1/6+ 1/6+ 1/6+ 1/6
+can be found from both pdf and pmf
+
+
+pmf give probab of a point ..while cdf gives probab up till that point
+
+
+3. PDF probab density func :
+it is done for continous random var
+
+main diference with PMF is that in CDF
+X axis is values random but on Y axis we have probab density instead of probab
+hence in pmf x axi s= value and y axis = probab
+
+why probab density instead of probab?:
+we cant use probab because in continuous data there are infinite points so for 
+each point we would get prob to be near to zero'
+ex that cgpa from 0 to 10 might be 3.4677 or4.5566 its impossible to haave probab
+
+so we use probab density
+what is area of the graph of pdf?:
+is gives probab from 0 to 10 of each boys marks that is 1 ...
+total area under the curve of a PDF is always 1.
+
+probab density :
+gives probab between two numbers ... like between 8 to 9 
+will use integration 
+ probab is calculated through area under the graph....
+Let’s say the PDF at X = 5 is 0.6 — what does that mean?
+
+It means the density of probability around 5 is 0.6
+
+If you want actual probability, you need to take an interval (like 4.9 to 5.1), then calculate the area under the curve.
+
