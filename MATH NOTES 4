@@ -1,0 +1,65 @@
+Density estimation :
+technique to find or estimate pdf of random var 
+has 2 methods :
+1. PARAMETRUC DENSITY ESTIMATION:
+is method of estimating pdf of random func by assuming that
+ underlying distributionn belongs
+ to  specific parametric family of probab dist
+ e.g normal dist,exponential dist,,,etc
+uses paramteres from data then using them inn formula to find pdf
+
+
+
+2.NON PARAMETRIC DIST:
+if sometime dist is not clear and not one of famous distribution family so then we use non parametric technique
+
+..method or technique used to estimate pdf of random var without making assumptions about 
+underlying dist
+we dont go for parametres like mew mean or std
+we use every datapoint 
+
+advantage is doesnt requre specific dist and any graph can be plotted
+disadvantage is computationally more intensive and require more data to be accurate estimate
+
+KDE kernel density estimation is example of NON PARAMETRIC DIST....
+
+KDE:
+
+uses a kernel func like famous guasses kernel or also ocalled normal dist
+and it makes each data point center and plots normal dist for it
+using left and 
+right point(standard deviation range also called bandwidth in KDE parametre) 
+and then does for each point then it takes  apoint and goes up y axis and
+ sees where it mathes theguasses curve and for it it adds it with the above curve
+ so plots a line above on top using this 
+
+2. CDF TO PDF :
+pdf grapg y axis is density while cdf graph is exaclty precentage of 
+element bleow the point 
+
+area of pdf gives cdf while slope of points of cdf gives pdf 
+do integration on pdf we get cdf
+do differentiation on cdf we get pdf
+
+HOW IS PDF USED IN DATA SCIENCE 
+ex is iris dataset we have to get t know what columns will hellp us
+ uderstand or predict
+species 
+we plot pdf for each column and see which graphs will we get ,,the on 
+more distinguishing will
+be useful column  for predictiing the result for ml model
+
+
+HOW IS CDF USED IN DATA SCIENCE 
+we decide up till the point on above pdf graph how much accurate 
+we will be in quantative 
+ 
+
+2D Density plots:
+
+studying 2 culumns plots
+
+
+how to study ?
+cosider  like seeing mountain  from above of plane 
+and color as its height toward more dark means more density 
