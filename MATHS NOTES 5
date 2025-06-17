@@ -1,0 +1,92 @@
+FAMOUS PROBAB DISTS:
+
+1.NORMAL DISTRIBUTION:
+bell shaped symmetrical around mean also knows as
+guassian distribution  is continuous is PDF
+
+ends are called tails ans they never touch x axis and touch on infinity
+most points lie on centre while few on ends or tails 
+
+
+2 parametres : means and standard deviation 
+mean gives center and std gives spread 
+need these parametres and we can draw graph
+
+why so important :
+commonaliy in nature ..is commom in nature 
+
+
+STANDARD NORMAL VARIATE(Z) or STANDARD NORMAL DISTRIBUTION:
+
+a standard normal variate(Z) is standardized form of normal distribution with mean=0
+and standard deviation = 1
+	
+helps us to compare different disstubutions with each other and to calculate probab
+using standard tables
+standardization:
+can convert normal to standard variate usin f formula of 
+ Z = x - mean /standard.deviation
+
+
+Z table :
+tells us area underneath a normal distrubution curve to left of z score...
+
+by z score we can find probab of a x value from standadard variate normal
+by using z tables and z score
+
+
+emperical rule : 68-95-99.7 rule of normal distribution
+
+
+
+properties of normal distribution
+1 symmetric around mean
+2 measure of central tendencieas are equal mean = mode=median
+3 emperical rule *** important
+4 area under curve = 1 
+
+
+SKEWNESS:
+its not symmetrical ..means not normal distributed 
+
+is measure of asymmetry of a probab distrbution.
+ it is statistical measure that describes the
+degree to which a dataset deviates from a normal distribution ...
+
+mean mode median not equal
+and one side of tail is longer
+tail longer on right side = positive skew  mode < median < mean
+tail longer on left side = negative skew   mode > median > mean
+
+moments in stats ..
+1st moment is mean
+2 is variance or standard deviation
+3 is skewness
+4 is kurtosis
+range is 0.5(almost symmetrical) then 1 moderately skew  then 1.5 highly skew
+
+uses in data science :
+outlier detection 
+ml models algorithms linear regression expect that inp is normal distribution
+hypothesis testing 
+central limit theorem
+
+
+4 is kurtosis
+KURTOSIS:
+is 4th stat moment. 
+it is measure of tailedness of probab dist of real valued random var..
+by fatness of tails ...its density 
+use case  of kurtosis 
+in finance kurtosis risk is risk associated with the possibility of extreme outcomes
+or fat tails in returns either super profit or super loss
+
+
+EXCESS KURTOSIS :
+measure of how much more peaked or flat a dist is compared to normal dist,,
+sample kurtosis - 3 = excess kurtosis
+
+types :
+leptokurtic  means positive excess kurtosis....much fatter tails
+platykurtic means negative excess kurtosis..less fat tails 
+mesokurtic means zero excess kurtosis  also can be said ex is normal dist........
