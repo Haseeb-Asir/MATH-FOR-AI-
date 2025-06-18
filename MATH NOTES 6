@@ -1,0 +1,132 @@
+**HOW TO FIND GIVEN DISTRIBUTION IS NORMAL DIST OR NOT :
+
+
+1 Visual inspection:
+plot histogram or density plot.. we will observe bell shaped curve ,...
+
+2 QQ plot. quantile quantile plot...
+
+3 statistcal test :
+e.g Sharpio wilk test , anderson darling test etc..
+these compare observed data values to expected values of 
+normal dist and give a p value
+which tel how muxh likely is normal dist
+
+
+QQ PLOT :
+is graphical tool to assess similarity of the distribution of two set of data.It is
+particularly useful when determining if set of data folloows normal dist...
+
+
+x is random var
+y is theoretical distribution (e.g nomal dist)
+the calculate quantils for x axis and y 100 100 for both
+
+then draw a diagonal line if points are on line that means x is of type y dist
+scatter plot is used
+can use statsmodel.api as sm library to calculate or draw qq plot
+can detect any distribution
+
+
+UNIFORM DISTRIBUTION:
+
+where all outcomes are qually likely within a given range
+means if we select a random value from this range any would be as likely as any other 
+value
+e.g coin tossing ,,prob of 1,2,3,4,5,6 is same
+
+TYPES:
+1. Discrete unifrom  for discrete random var
+2. Continuous uniform for continous random  var 
+pdf is constant density and is 1/b-a
+*skewnwss is zero as its symmetric 
+
+examples is machine learning
+random initialization
+sampling
+data augmentation
+hyperparamter tuning
+
+
+LOG NORMAL DISTRIBUTION:
+is heavy tailed continuous dist of random var whose logarith us normally distrubuted
+means right tailed or skewd distributions which can become normal dist on log
+
+examples
+1 comments on social apps ..these are log normal dist
+2 length of chess games 
+
+this dist is skewed
+
+how to check if random var is log normal dist..
+we take log of x and then qq plot to see if its normal
+
+
+
+PARETO DISTRUBITON:
+that is commonly used to model the distribution
+ of wealth , income of other quantities
+that exhibit a similar power law behaviour
+
+power law:
+it is functional relationship between two vars,
+ where one var is propottional to power 
+of other.
+e.g x and y
+y= k*x^a
+also 80-20 rule follows power law 
+means that if it follows power law then 20% will have 80% od entire area under graph
+or 20 will control 80 of area
+ex..larger money is owned by 20% of people 
+one parametre a or alpha
+more alpha means more thin tail
+if a is infinity then it has no tail a straight vertical line
+curves are skewed
+a = 1.6 we can say this dist follows 80-20 rule 
+it is skewed
+how to detect if dist is pareto:
+1.log-log plot
+calc log of x and y and plot graph and if it is donward linear line then it pareto dist
+2.QQ plot
+
+
+
+BERNOULI DISTRIBUTION:
+
+discrete type dist and not on continuous
+useful and along with others dist
+is a probab dist that models a binary outcome where outcome can either be
+success 1 or failure 0 
+one parametre p,...
+ex: coin toss...heads success 1, tail failure 0
+e.g email spma detector .. can be either spam (success) or notspam (fialure)
+or rolling a dice and getting 5 ...
+
+useful more in binomial dist
+
+
+BINOMIAL DISTRIBUTION:
+
+bernouli is sopecial case of binomial 
+
+is probab dist that describes the no of successes in fixed number of independent
+bernouli trials with two outcomes 1 or 0 where probsba of succes 1 is constant for 
+each trial 
+
+in simple we perform bernuoli n times and see the probab result
+2 parametres n(no of trials ) and p(probab of success)
+e.g asking 10 students for course review yes or no 
+but all should give independent answer e.g not talking with each other 
+ can use equation to find its probab of event to occurr
+by formula ....on wiki and notes   nCx p^x(1-p)^n-x
+n = no of trial , p = probab of succes , x = desired result
+
+criteria:
+more than 1 trial
+only 2 outcomes are possible ,0 or 1
+proobab should be fixes in each run
+trails should be independent
+
+UESECASE IN DATA SCIENCE:
+binary classicification problem..
+hypothesis testing
