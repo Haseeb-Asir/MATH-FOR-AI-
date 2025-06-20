@@ -1,0 +1,145 @@
+**TRANFORMATIONS:
+we want data to be normal dist as we know lot about it but
+in real world data we see that its not normal and to convert it into normal we use
+tranformations
+mathemarical tranformations 
+
+2 main  types
+
+Log Transform
+Box-Cox 
+Yeo-Johnson
+
+we change distribution of data into normal dist through tranformation
+some algorithm work great on normal dist so we try to make it normal dist
+ or close to dist
+
+
+
+
+SKLEARN HAS 3 transformers
+func tranformer ...power trans  ...quantile transf
+
+1.FUNCTION TRANSFORMER:
+in func transs...
+we can log trans
+reciprocal transfrom
+square or sqrt tranform 
+
+1 LOG TRANSFORM:
+we take log of every value
+dont work on -ve value
+should use and works on right skew data best (also same as  log normal dist)
+
+2 RECIPROCAL TRANSFORM:
+1/x ..small value become large while large become small
+
+3 Sqaure transform:
+we do x**2
+and useful for left skewed
+
+4 square root transform:
+least useful...and we do sqrt of x
+
+done through function transformer func of sklearn
+
+
+
+
+2. POWER TRANSFORMER 
+in this we can do 
+BOX cox and 
+yeo johnson
+
+1 BOX COX:
+it is general transform and log sqrt or others are its divisions 
+we try to calculate what power of x will be fine..
+we denote power by lambda symbol
+and it ranges form -5 to 5
+
+strictly applicabe to numbers grater than 0 not below or 0
+
+
+2 Yeo johnson transformation
+a furthur adjudcement of box cox that can work also fro numbers less than 0 and 0
+
+
+
+
+
+SAMPLING DISTRIBUTION:
+is a probab dist that describe statisical properties of sample statistic e.g mean or
+proportion computed from multiple independent samples of same size of population
+
+population is all people while sample is some people of population
+e.g we have 50000 populaition of india people salary so we do that
+we pick random 50 people salary and form onn set and then again ...we get 100 sets
+in each 50 poeples salary
+now we find mean for each set and we get 100 means this is called sample mean and this
+forms samlple distribution
+
+
+CENTRAL LIMIT THEOREM:
+
+States that distribution of sample means of a large no of independent and
+identicaly distributed random var will approach a normal dist,regardless of
+underlying dist of variables
+
+it doesnt matter what is dist of populaltion
+we will get normal dist 
+
+ex:
+above example of sampling dist...
+where
+we pick random 100 people salary from population and form one set...
+and then again ...we get 100 sets
+in each 100 sets we find mean for each set and we get 100 means
+this is called sample mean and this
+forms samlple distribution which will be a normal distribution
+
+
+conditions::
+1 sample size is large enough  tyoically > or equal to 30
+2 sample is drawn from finite population or infinitw with finite variance
+3 random var are independent and identically distributed
+
+
+before mean, variance ^2
+after mean same but variance^2/n   n= sample size
+
+
+
+
+
+
+
+POPULATION AND SAMPLE
+........AS SAME AS ABOVE
+
+PARAMETRES VS ESTIMATE(STATISTICS):
+PARAMETRES:
+is numerical value that describes characteristic of a population....
+generally are unknown because its difficult to obtain data from entire population
+e.g mean,var,mode std of population is called parametres
+
+ESTIMATE(STATISTICS):
+is numerical value that describes characteristic of a sample....
+
+e.g mean ,std,var of sample and is called statistics
+
+-----------------------------------------------------------------------
+2. INFFERENTIAL STATISTICS:
+.........branch focuses on making predictions and estimation about larger population
+based on sample data  of population.......
+
+technique includes :
+hypothesis testing, confidense intervals and regression analysis
+
+
+
+POINT ESTIMATE:
+single value calculated from a sample that serves as approximation for unknown 
+population paramter e.g mean or std'
+
+e.g calc age of 77k suscribers so we do live stream and 2000 come attend and we collect 
+thier age mean and it is 28 so this is point estimate
