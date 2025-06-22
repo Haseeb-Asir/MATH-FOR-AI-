@@ -1,0 +1,72 @@
+*****CONFIDENCE INTERVAL*******
+CONFIDENCE INTERVAL:
+
+as we se point estimate result is not accurate or reliable so stats used a
+concept of range which covers values in which parametre can occur or lie 
+ 
+is a range of values within which we expect a particular populatuion parametre..like mean
+
+
+CONFIDENCE  LEVEL:
+usually expressed as percentage liek 95% hoe sure we are true value lies
+within interval or range
+
+formula :
+confidense interval = point estimate +- margin of error
+
+
+**ways to calculate CL:
+
+1.Z-procedure(SIGMA KNOWN):
+
+done when standard dev of population is availabe
+
+assumptions or conditions:
+
+
+1.random sampling ...sample should be random
+2. known population std
+3. normal dist or large sample size..if not then central limit thoerem is applied
+
+if not above 3 then cant be applied
+
+example above youtube ...
+std =15
+we calc point estimate
+
+1-alpha = confidense level
+
+formula CI = point estimate +- Z a/2 std/sqrt.n
+
+confidence interval man we perfom 100 test so 95 times we will get 
+result in range interval...
+
+FACTORS AFFECTING CONFIDENSE INTERVAL:
+1. Confidense level (1-aplha)
+2.sample size
+3.population std
+
+this method will rarely or never be used because std of population is never available
+
+2. T-procedure:
+done when standard dev of population is not availabe
+also when sample size is low
+
+
+assumption or conditions:
+
+1 random sampling...
+2 sample standard deviation
+3 dist normal or use clt theorem 
+independent observations.....
+
+
+we use in fomula instaed of std we use sample mean but tcomplexity cme that if we do
+ it then we get students T distributiom(looks like normal dist but not exact)
+
+depends on one paramter called degree of freedom (n-1) n= sample size
+
+so we use T table in formula instead of Z table
+ t alpha/2 is greater than z alpha/2 but in smaller sample rate
+
+----------------------------------------------------------------------
