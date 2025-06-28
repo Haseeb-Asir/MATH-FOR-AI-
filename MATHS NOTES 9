@@ -1,0 +1,81 @@
+**************HYPOTHESIS TESTING***********
+
+EX...
+lets say youtbe video i shoot are no white board,but i realzie average view time
+on my vidoe is 5 min so i look at other creators and see they use blank board
+so i now make new video now with thier format or method and average screen time
+was 13 minutes....now this doesnt mean new approach was good because many facotrs 
+are included .eg content topic etc....
+now i do it for 5 videos and get 7,8,9,22,13 still i cant be assured
+ that this method worked..
+
+IS a method of statistical inference used to decide whether the data at hand 
+sufficiently support a particular hypothesis. 
+allows us to make probabilistic statement about population parameters.
+
+important concept beforehand
+
+1. NULL HYPOTHESIS:hO
+it is statement that assumes that there is no significant effect or relationship
+between variables being studied
+it serves as starting point for hyp testing 
+and represents or also called STATUS QUO or assumption
+of no effect until proven
+
+ex...in youtube ex above we had to say that new sstyle will gain more views so
+null hyp wiill be that new style = old style means both will give same views avr
+
+
+2. ALTERNATUVE HYPOTHESIS: H1 or Ha:
+is statement that contradict null hyp and claims 
+significant effect or relationship between variables being studied
+it represents or also called RESEARCH HYPOTHESIS.
+
+ex:
+***(in hyp testing we try to false the null hyp but in the end either null will be
+true or alternative will be true)
+
+
+important points :
+.how to see if it is null or alternative hyo..so we use rule that if nothing new 
+is happening so it is null hyp
+
+in hyp testing we try to gather evidence to reject null hyp
+
+its important to note that failing to reject null hypothesis doesnt 
+necessarily mean that null hyp was true...it means that there isnt wnough evidence
+to support the alternative hyp
+
+court lawyer ex....
+*****
+*2 main types of techniques:
+
+1.REJECTION REGION APPROACH:
+1. calc null or alternate hyp
+2.select significance level.....(0.05 or 0.01 generally used)(it is probab of
+rejecting null hyp when it was true..e.g 100 out of 5 times you rejected null hyp)
+3. check assumptions ...check dist
+4. decide which test is appropriate (Z test, T test,chi square test,Anova test)
+5.state relevant test static...e.g Z score for Z test
+6.conduct test
+7.reject or not reject null hyp
+8. interpret result
+
+
+***SIGNIFICANCE VALUE:
+ALPHA...
+it is predetermined threshold used in hypothesis testing to determine whether the null
+hypotheis should be rejected or not.It represents the probability of rejecting nulll
+hypotheses when its actualy truE, also known as TYPE 1 ERROR
+MOSTLY 5 PERCENT 
+increasing alpha increases range of rejection.....
+
+critical region or rejection is region of values that correspond to null hypothesis
+at some chosen probability levl
+
+Problem with rejection rejion approach::::
+lets say we calculated Z which came 1.97 and crticial region was 1.96  so we reject 
+null because of 0.01 value which is bad
+if Z=15 which is rare but we do reject null hyp...
+evidence strength is not told by this approach
+so we use p value approach....which tellls us strength of evidence
