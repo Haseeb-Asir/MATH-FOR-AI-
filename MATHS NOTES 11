@@ -1,0 +1,168 @@
+APPLICATION OF HYPOTHESIS :
+1.Testing the effectiveness of interventions or treatments: Hypothesis testing can be used to
+determine whether a new drug, therapy, or educational intervention has a significant effect
+compared to a control group or an existing treatment.
+
+2.Comparing means or proportions: Hypothesis testing can be used to compare means or
+proportions between two or more groups to determine if there's a significant difference.
+This can be applied to compare average customer satisfaction scores, conversion rates, or
+employee performance across different groups.
+
+3.Analysing relationships between variables: Hypothesis testing can be used to evaluate the
+association between variables, such as the correlation between age and income or the
+relationship between advertising spend and sales.
+
+4.Evaluating the goodness of fit: Hypothesis testing can help assess if a particular theoretical
+distribution (e.g., normal, binomial, or Poisson) is a good fit for the observed data.
+
+5.Testing the independence of categorical variables: Hypothesis testing can be used to
+determine if two categorical variables are independent or if there's a significant association
+between them. For example, it can be used to test if there's a relationship between the
+type of product and the likelihood of it being returned by a customer.
+
+6.A/B testing: In marketing, product development, and website design, hypothesis testing is
+often used to compare the performance of two different versions (A and B) to determine
+which one is more effective in terms of conversion rates, user engagement, or other
+metrics.
+
+
+**********APPLICATION OF HYPOTHESIS IN MACHINE LEARNING:**********
+1.Model comparison: Hypothesis testing can be used to compare the performance of
+different machine learning models or algorithms on a given dataset. For example, you can
+use a paired t-test to compare the accuracy or error rate of two models on multiple 
+crossvalidation folds to determine if one model performs significantly better than the other.
+
+2.Feature selection: Hypothesis testing can help identify which features are significantly
+related to the target variable or contribute meaningfully to the model's performance. For
+example, you can use a t-test, chi-square test, or ANOVA to test the relationship between
+individual features and the target variable. Features with significant relationships can be
+selected for building the model, while non-significant features may be excluded.
+
+3.Hyperparameter tuning: Hypothesis testing can be used to evaluate the performance of a
+model trained with different hyperparameter settings. By comparing the performance of
+models with different hyperparameters, you can determine if one set of hyperparameters
+leads to significantly better performance.
+
+4.Assessing model assumptions: In some cases, machine learning models rely on certain
+statistical assumptions, such as linearity or normality of residuals in linear regression.
+Hypothesis testing can help assess whether these assumptions are met, allowing you to
+determine if the model is appropriate for the data.
+
+
+
+
+
+CHI SQUARE TEST:
+used when working with categorical data and we want to see:
+1. if one var follows a certain distrubution(Goodness-of-Fit Test)
+2.If two vars are associated or independent(Test of Independence)
+
+
+1. Chi-Square Distribution – Key Concepts
+A Chi-Square distribution is defined only for non-negative values.
+
+It’s right-skewed, especially for low degrees of freedom, but becomes more normal-looking as the degrees of freedom increase.
+
+The mean = degrees of freedom
+
+The variance = 2 × degrees of freedom
+
+It is used for test statistics when comparing observed vs expected frequencies.
+
+🟢 2. Chi-Square Goodness-of-Fit Test
+💡 When to Use:
+You want to test if a single categorical variable follows a specific distribution.
+
+Example: Rolling a die 60 times and testing if all 6 sides appear equally.
+
+📌 Steps:
+Set hypotheses:
+
+H₀: Observed distribution = expected distribution
+
+H₁: Observed ≠ expected
+
+Calculate expected frequencies:
+Based on the assumed distribution. For a fair die → all outcomes expected 10 times.
+
+df=k−1
+k = number of categories
+
+Compare to critical value (or use p-value)
+
+If p-value < α, reject H₀.
+
+✅ Assumptions:
+Independent observations
+
+Categorical variable
+
+Expected frequency per category ≥ 5
+
+Distribution is fixed before testing
+
+🟣 3. Chi-Square Test for Independence
+💡 When to Use:
+You want to test if two categorical variables are related.
+
+📌 Steps:
+Set hypotheses:
+
+H₀: Variables are independent
+
+H₁: Variables are associated
+
+Create contingency table with observed values
+
+Degrees of freedom:
+𝑑𝑓=(𝑟𝑜𝑤𝑠−1)(𝑐𝑜𝑙𝑢𝑚𝑛𝑠−1)
+df=(rows−1)(columns−1)
+Compare with critical value or p-value
+
+✅ Assumptions:
+Large enough sample size (expected freq ≥ 5)
+Variables must be categorical
+Independent sampling
+
+📊 Examples:
+🎲 Example 1 (Goodness-of-Fit):
+You roll a die 60 times. Are all sides equally likely?
+
+Side	Observed	Expected
+1	12	10
+2	8	10
+...	...	...
+
+Calculate 
+𝜒
+2
+χ 
+2
+, check p-value, and determine if die is fair.
+
+🧠 Example 2 (Independence):
+You collect data on education level vs exercise preference.
+Chi-Square helps test: “Is exercise choice related to education level?”
+
+🔧 Python Applications
+Feature selection: Check if a categorical feature relates to the target
+
+Model evaluation: Use χ² on the confusion matrix
+
+Exploratory data analysis: Check relationships between categorical variables
+
+Binning continuous variables: Use χ² to find the best split
+
+CHAID decision trees: Use χ² to split nodes based on strongest relationships
+
+🧪 P-Value in Chi-Square:
+Just like with Z or T tests:
+
+Low p-value (< 0.05) → Reject H₀ (evidence of association or poor fit)
+
+High p-value → Fail to reject H₀ (no strong evidence)
+
+🔁 Recap:
+Test Type	Used For	Hypothesis
+Goodness-of-Fit	One categorical variable vs theoretical dist	H₀: observed = expected
+Test for Independence	Relationship between two categorical vars	H₀: vars are independent
