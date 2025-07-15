@@ -1,0 +1,143 @@
+TYPE 1 VS TYPE 2 ERROR:
+
+TYPE 1 (FALSE POSITIVE):
+occur when sample result lead to rejection of null.hypthesis whenit was true inreal
+
+denoted by alpha or significance level
+by choosing alpha value we can control risk of managing type 1 error
+
+
+TYPE 2 (FALSE NEGATIVE):
+occur when sample result lead to no rejection  of null.hypthesis 
+when it was false inreal
+probability of comitting it is denoted by 
+Beta  (1-Beta)power test...
+
+
+tradeoff between two:
+if we reduce alpha to reduce type 1 error
+so by default probab of type 2 increases
+
+type 1 decrease = type 2 increase
+thats why significance is alpha = 0.05 
+
+
+
+*****************************************
+ONE SIDED VS TWO SIDED TEST
+ONE SIDED (ONE -TAILED)TEST:
+is used when researcher is interested in testing the effect
+in a specific direction 
+(either greater than or less than value in null hypothesis)
+ex. whether new medication inrease healing more than prevoius one
+
+two more types
+right tailed:
+more value increase result 
+left tailed:
+new mwthod will reduce result
+
+TWO SIDED (TWO-TAILED)TEST:
+is used when researcher is interested in testing the effect
+in both  direction 
+
+ex.lays will have less than or greater than 100g weight
+
+ADVANTAGE VS DISADVANTAGE:
+TWO TAILED:
+ADVANTAGE:
+can detect effect in both directions.....
+more conservative as alpha is split in two side so type 1 error is reduced
+DISADVANTAGE:
+less powerful...because alpha is split in two tails leading to type 2 error risk
+not appropriate for directional hypothesis .....
+ONE SIDED (ONE -TAILED)TEST:
+ADVANTAGE:
+more powerful....
+diectional hypothesis...are appropriate
+
+DISADVANTAGE:
+missed effects,.....
+increased type 1 error 
+
+
+
+2.P VALUE APPROACH:
+
+is probab of getting a sample as or more extreme (having more evidence again H0)
+than our own sample given null hyp is true.
+it tells us evidence strength against null hyp
+
+e.g coin toss of head ...null hyp is 50 heads 50 tails and our test gave 53 heads so probab of getting
+more than 53 heads is p value = 0.3 oe 30%
+means out of 100 coin toss we get 53+ jeds 30 times
+
+
+INTERPRETING P VALUE:
+
+*a general rule that if p val <= alpha we can reject null hyp...
+some scenerio where alpha is not given:
+1. p<0.01 indicate string evidence we can reject h0
+2. 0.01<p<0.05 indicate moderate evidnce against null evidence 
+3. large p valye 0.05<p<0.1 indicate weak evidence 
+4. p>0.1 weak or no evidence 
+
+T-TEST:
+no std...
+works good on smaller size n 
+is used to compare menas of 2 samples or sample mean to a known population mean
+uses students T  distribution
+*********
+
+TYPES:
+
+1.ONE-SAMPLE TEST:
+is used to compare means of single sample to known pop mean
+null hyp says no difference in sample and pop mean while alternate hyp says 
+there is difference.
+assumptions:
+1. normal dist
+2.independence
+3.random sampling
+4.unknown pop standard deviation
+
+
+
+2.INDEPENDENT TWO-SAMPLE TEST:
+used to compare means of two independent samples...
+e.g class average of two sections A and B 
+assumptions:
+1.independence of samples
+2.normal dist
+3.equal variances(homoscedasticity):variance should be equal(F test or levene test)
+4.random sampling
+
+
+3.PAIRED T-TEST (DEPENDENT TWO-SAMPLE TEST):
+used to compare means of two dependent samples.
+eg.  same class calc training program..test before program and then after program
+compare two average  is....dependent test
+common scenerio of use:
+1. BEfore and after studies
+2. MAtched or correlated groups....
+
+assumptions:
+1.paired observations
+2. normaliyy
+3.independence of pairs
+
+
+***************
+shapiro test:
+tells if no of values follow normla dist or not
+e.g age of 58 poeple from titanic dataset
+return p value
+if p > 0.05  then its normal else not
+
+F-TEST...
+LEVENE TEST:
+to check equal varainace of 2 samples
+
+
+
+
