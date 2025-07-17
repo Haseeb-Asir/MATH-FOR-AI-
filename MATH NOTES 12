@@ -1,0 +1,246 @@
+************
+ANOVA TEST:
+extension of t test
+But for more than 2 samples then its useful
+
+assumptions:
+normal dist
+random sampling
+datais independent
+types:
+1.one way anova:
+one factor or independent var
+
+2.Two way anova:
+more than one factor or independent var
+compares effect of multiple levels of two factors
+
+
+✅ Step 1: Set Hypotheses
+H₀: All group means are equal (no effect)
+H₁: At least one group is different
+
+✅ Step 2: Calculate Means
+Mean of each group (e.g., A: 72, B: 65, C: 82)
+
+Grand mean (average of all values combined)
+
+✅ Step 3: Calculate Variances (Sum of Squares)
+➤ SSB (Sum of Squares Between Groups):
+
+How far each group mean is from the grand mean
+Multiplied by the number of observations in each group
+
+➤ SSW (Sum of Squares Within Groups):
+How far each value is from its own group mean
+
+✅ Step 4: Calculate Mean Squares
+MSB = SSB / df₁ → df₁ = k – 1 (k = number of groups)
+
+MSW = SSW / df₂ → df₂ = N – k (N = total observations)
+
+✅ Step 5: Calculate F-statistic
+ 
+✅ Step 6: Compare F-statistic to Critical F (or use p-value)
+Use F-distribution table or Python to find the p-value
+
+If p < α (e.g., 0.05) → reject H₀
+
+
+
+
+| Use Case                    | How ANOVA Helps                                   |
+| --------------------------- | ------------------------------------------------- |
+| Feature Selection           | Tests if feature categories differ in target mean |
+| Model Comparison            | Check if model performance differs across folds   |
+| A/B/C Testing               | Compare 3+ versions of product or strategy        |
+| Business Experiments        | Compare branch sales based on strategy used       |
+| Model Interpretation (SHAP) | See which inputs cause biggest group variation    |
+
+
+
+
+
+-------------------------------------
+IMPORTANT PROBAB CRASH COURCE:
+
+5 IMPORTANT TERMS:
+
+1.Random experiment:
+has more than one possible outcome
+not possible to predict outcome in advance
+
+
+2.Trial:
+
+refers to a single execution of random experiment.......
+each produces a experiment
+
+3.Outcome:
+refers to single possible result of trial 
+
+4. Sample Space:
+is set of all possible values that can occur..
+generally one random experiment will have one set of sample space
+
+5. Event:
+is specific set of outcomes from a random exp.
+essentialy it is sub set of sample space...
+also known a probab of something e.g coin toss..getting head is event
+have single or multi outcome
+
+we can also have multi events
+
+
+**
+TYPES OF EVENTS:
+1.Simple Event:
+also known as elementary event, that consist of one outcome
+
+2. Compund event:
+consists of two or more simple events;
+
+3.Independent events:
+two events are indpendent if occurence of one doesnt effect prob of outcome
+of other 
+e.g fliping coin and rolling die
+P(a INTERSECTION b) OR P(A).P(B)
+
+4. Dependent events:
+two events are dependent if occurence of one effect prob of outcome
+of other 
+formula same as conditional probab....
+
+5. Mutually exlusive events:
+if both cant occur at same time
+P(A|B)= 0 
+
+6.Exaustive events:
+set of events is exaustive if at least one of the events must occur
+ when experiment is performmed..
+
+7. Impossibe events:
+not possible...
+die roll to get 7.
+
+
+
+********-***********-**********-************
+
+
+PROBABILITY:
+is measure of likelihood that a particular event will occur..
+
+expressed as number btw 0 and 1 .
+
+TYPES:
+1.EMPIRICAL PROBAB:
+also know as experimental probab
+a type of measure that is basede on observed data rather
+than theoretical asumptions
+calc as ratio of times a event occur to the total number of trials 
+ex..
+
+
+
+
+2.THEORETICAL PROBAB:
+
+is used when each outcome in a sample space is equally likely to occur.
+
+ex..
+
+--------------------
+RANDOM VAR(advanced):
+
+is a func that maps outcomes of a random process (sample space) to set of real numbers
+its not a var .its a function(convert inp to out based on some logic)
+denoted by capital letter
+
+input: 
+whole sample space...
+
+output:
+is real number
+
+ex:
+inp is heads and we make it as 1
+tails as 0 
+
+e.g rooling two dices..inp are dice and logic 
+if based on event(e.g answer is 7)so output will be logic will be to sum sample space...
+
+
+
+
+PROBABILITY DIST OF RANDOM VAR:
+is list of all of possible outcomes of random var alog with 
+thier corresnponding probab values,
+
+pdf: y=f(x)  probab of x 
+
+
+MEAN OF RANDOM VAR:
+
+often called expected value..
+is essentially average outcome of a random process that is repeated many times.
+its a weighted average of possible outcomes of random var,where each outcome is weghted
+by its probab pof occurence.
+
+e.g rolling dice.....we perform 100 trials and find average among 100 trials,
+also can be said sample mean 
+
+VARIANCE OF RANDOM VAR:
+
+in this we use expected value or mean of random var inplace of simple pop or sample mean
+the thing we get is expected value of X 
+means we find x-expected value for each x then calc average is  expected value again
+and this is variance 
+
+
+fromula = var(x)= E[x^2]-E[X]^2
+or E[X-E[X]^2]
+
+
+VENN DIAGRAM OF PROBAB:
+Universal set denotes sample space and its prob is always 1
+and events are denoted with circles in U
+
+P(A) is value in A circle/total no of value
+
+CONTIGENCY TABLE:
+is easy to understand probabs 
+help convert into venn 
+and useful ahead
+
+*****************
+TYPES OF PROBABILITY:
+
+1.Joint probability:
+lets say we have 2 random var X and Y .joint probability of X and Y,denoted as p(X=x,Y=y) 
+is probability that X takes x and Y takes y at same time
+
+
+..porbability of happening 2 events at once is called joint probab
+ex: we use x as pclass and y as survived in titanic set...
+so we use crosstab in code to get table and
+get probab of each(also can be said joint probability distribtuion....)
+
+2. Marginal probability(simple or unconditional):
+refers to probab of an event occuring irrespective of outcome of some other event.
+when dealing with random var ,marginal probab of random var is simply the probability of
+that variable taking certain value,regardless of other variables.
+
+same ex as above...sums all poeple as survived regardless of pclass
+same for pclass
+
+3.Conditional probability:
+important one
+
+is a measure of probability of an event occurring,given that another event has already
+occurred.if event of interest is A and event B has already occurred ,the conditional 
+probab of A given B is P(A|B).
+
+means B has been done and how it affects A pobab
+
+formula is P(A|B) = p(A intersection B)/p(B)   or joint probab/margin probab of B
