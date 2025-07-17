@@ -1,0 +1,254 @@
+**********************
+BAYES THEOREM:
+is fundamental concept in field of probab that describes how to update the
+probabilities of hypothesis when given evidence.
+
+
+thomas bayes introduced it.....
+*****
+P(A|B)= P(A) x P(B|A)/P(B)
+---------------------------------------------------------------------------------------------
+*********************************************************************************************
+**
+LINEAR ALGEBRA:::::
+
+
+is branch of maths that deals with study of linear systems,
+which are set of equations involving linear functions of variables..
+it is foundational subject in maths and has applications in many areas
+
+
+
+why for ML:
+good in generilazing concepts in higher concepts,,work in higher dimesions more than 4d
+data representation is easy...text,video or aything....
+
+
+VECTORS:
+it is a point in a particular coordinate sytem
+dimension..equals to cordinate of veector system
+
+represent using [x1,x2,x3...xn] in coding
+
+how used in ML.
+
+feature vector..(convert all input features of all data points in dataset 
+into or treat as vector)
+feature vector are given as input to model to predict..
+
+e.g movie recommender systems....create vector out of summary of movies.
+
+ROW AND COLUMN VECTOR:
+row = 1 x n
+column = n x 1
+
+
+ex in iris dataset:
+150 flowers 
+picking one flower would give row vec
+while taking all type of flower species is column
+
+DISTANCE FROM ORIGIN OF VECTOR :
+ using pythhagoras theorem 
+d = sqrt(a2 +b2 )
+also possible for multiple vector dimensions 
+d = sqrt(a2 +b2 + n2)
+
+also known as magnitude of vector ||A||
+
+
+
+EUCLIDEAN DISTANCE:
+
+distance between two vectors
+
+d = sqrt((x2-x1)^2+(y2-y1)^2+n)
+
+in ML:
+nearest neighbour algorithm uses eucledian dist..
+many algo use this internally 
+
+SCALAR ADDITION/SUBTRACTION(SHIFTING):
+add things to vector so it moves or is scaled so is sub
+used in mean centering:
+(calc mean of all x1 values from vector and minus mean each x1 and we get new 
+vectors which are shifted,same for x2 and hence points are centered toward mean )
+
+
+SCALAR MULTIPLICATION/DIVISION:
+multiplication is done through
+1.dot product(returs a scalar) more useful in ML
+
+A.B = At(1xn) B(nx1)
+
+rules:
+is commutative a.b = b.a
+is distributive a.(b+c) = a.b + a.c
+
+uses :
+used too comput similarity btw two vectors 
+calc projections 
+perform matrix multiplication
+used in deep learning totally 
+
+A.B = |A||B|cos0
+*****
+Cosine similarity:
+
+cos0 = A.B/|A||B|
+used in ml as similarity measure to find how much 2 vector are similar
+ranges value form -1 to 1
+compare angle 0 between both 
+e.g used in movie recommendation 
+
+2.cross product(returns a vector)
+in 3d
+twi fingers multiply then thumb upward in 90 degree is product
+
+
+
+EQUATION OF HYPERPLANE:
+
+plane more than 3d dimension 
+
+
+for 2d eq of line is  y = mx + b
+or general from ax + by + c =0
+
+
+y= -a/bx -c/b
+
+m = -a/b  , b = -c/a
+
+
+w1x1 + w2x2 + wo = 0
+
+w1x1 + w2x2 + w3x3 +  wo = 0
+
+w1x1 + w2x2 + w3x3 + wnxn  wo = 0
+
+
+
+w.x +wo = 0
+
+where w = [w1,w2,w3,wn]
+x = [x1,x2,x3,xn]
+
+
+
+Wt.X +Wo = 0
+
+
+
+Wo will be zero if line passes through origin 
+
+so Wt.X = 0 is eq of hyperplane simplified
+
+W will always be perpendicular to X plane
+
+
+
+
+
+🔹 Matrix Basics:
+A matrix is a grid of numbers (rows × columns)
+is a linear transformation result or to show them 
+M1XM2 != M2XM1 HOWEVER 
+A(bxC)=(AxB)C 
+
+Used for data, transformations, solving equations
+
+🔹 Key Types of Matrices:
+Row Matrix: 1 × n
+
+Column Matrix: n × 1
+
+Square Matrix: same rows and columns
+
+Identity Matrix: diagonal = 1s
+
+Zero Matrix: all elements are 0
+
+🔹 Matrix Operations:
+Addition/Subtraction: same size only
+
+Multiplication: not commutative
+
+Transpose: flip rows & columns
+
+Scalar Ops: add/multiply with a single number
+
+🔹 Determinant & Inverse:
+Det ≠ 0 → matrix is invertible
+
+Inverse (A⁻¹): used to solve Ax = b
+
+Use adjoint & cofactor if needed
+
+🔹 Solving Systems:
+Solve Ax = b using:
+
+Inverse → x = A⁻¹b
+
+Gaussian Elimination
+
+LU Decomposition
+
+
+****
+UNIT VECTORS:
+from origin to 1 on x and 1 on y 
+vectors come from unit vectors...
+i[1 0] j[0 1]
+we get vector by multipying it with above
+
+also called basis vector because every vector cn br created from them 
+whenver we multiply unit vectors with scalar and we keep changing value of scalar 
+then it might cover whole 3d space IR2
+
+
+
+LINEAR TRANSFORMATION:
+when coordinate system changes shape like skew tilt rotate
+vector input --> f(x)--->output vector
+conditions:
+all lines must remain lines
+no curves
+lines shuld be evenly spaced
+origin shouldnt move
+grid lines should be parallel
+
+if we apply onn pic in ml it will rotate etc 
+ex Shear transformation:measn things get clustered or squeezed
+
+
+
+
+scaler vector:
+
+means multiply scalar with vector 
+2[1 2] we get scaled value [2 4]
+
+Span off vector:
+the vectors that can be created from the vector available 
+
+Linear dependence of vector:
+when all vectors of span lie on single line in plane
+done when x:y ration remains same 
+e.g x=y,x=2y
+or if we romove one vector from eq and stil span remains same 
+
+
+
+X Y INTERCEPT:
+x value mens when y is zero or line touches  on x axis 
+y value mens when x is zero or line touches  on y axis
+
+LINEAR EQUATION:
+eq wisch gives line on plane..
+types:
+1.two variable:
+2 variables x,y
+2.Three variable eq:
+3 variables x,y,z
+3.Highar dimension eq:
